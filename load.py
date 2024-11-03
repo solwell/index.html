@@ -1,0 +1,1 @@
+hasattr yield raise return

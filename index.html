@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParusAntiVirus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .headerr {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+        .header img {
+            width: 18px;
+            height: 18px;
+        }
+        .header .title {
+            margin-left: 10px;
+            font-size: 18px;
+        }
+        .banner {
+            position: relative;
+            text-align: center;
+            padding: 50px;
+            background: url('https://avatars.mds.yandex.net/i?id=c03638853b80c24d82c34a9f6d3d4ed6_l-8239632-images-thumbs&n=13') no-repeat center center;
+            background-size: cover;
+            color: white;
+        }
+        .banner .content {
+            position: relative;
+            display: inline-block;
+        }
+        .banner .content img {
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        .banner h1 {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .banner p {
+            font-size: 16px;
+        }
+        .hiddenn-textr {
+            display: none;
+            text-align: left;
+            margin-left: 10px; /* Добавил отступ слева */
+        }
+    </style>
+    <title>Select Element</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #001f3f;
+            color: rgb(240, 243, 99);
+            height: 100vh;
+        
+        }
+
+        .select-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .select-container select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #fff94e;
+           background-color: #001f3f;
+            color: rgb(234, 255, 77);
+        }
+
+        .hidden-text {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #001f3f;
+            color: rgb(255, 252, 81);
+            animation: slideDown 0.3s forwards;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .side-image {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%) rotate(-90deg);
+            width: 100px;
+        }
+    </style>
+    
+    <title>Ваш сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #001f3f;
+            color: white;
+            height: 100vh;
+            
+        }
+
+        .select-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .select-container select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: black;
+        }
+
+        .hidden-text {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: black;
+            animation: slideDown 0.3s forwards;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .side-image {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%) rotate(-90deg);
+            width: 100px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: hsl(210, 100%, 12%);
+            color: hsl(0, 0%, 100%);
+            padding: 20px;
+            border-top: 1px solid #888;
+            box-sizing: border-box;
+        }
+
+        .modal p {
+            margin: 0;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .small-text {
+            font-size: 12px;
+            color: #bbb;
+        }
+    </style>
+     
+     <title>support</title>
+     <style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #001f3f;
+            color: white;
+        }
+
+        .popup-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ADD8E6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .popup-button img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+            width: 300px;
+            padding: 25px;
+            background-color: white;
+            color: black;
+            border-radius: 14px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .popup-header {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .messages {
+            max-height: 200px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            padding: 5px;
+            border-radius:11px;
+            margin-bottom: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .message.moderator {
+            background-color: #ADD8E6;
+        }
+
+        .message.user {
+            background-color: yellow;
+        }
+
+        .message-author {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .message-author.moderator {
+            color: #ADD8E6;
+        }
+
+        .message-author.user {
+            color: yellow;
+        }
+
+        .timestamp {
+            font-size: 10px;
+            margin-left: 10px;
+            align-self: flex-end;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+    
+</style>
+        
+<title>ParusAntiVirus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #001f3f;
+            color: white;
+        }
+
+        .select-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .select-container select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: black;
+        }
+
+        .hidden-text {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: black;
+            animation: slideDown 0.3s forwards;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .alert {
+            display: none;
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .success {
+            background-color: #4CAF50;
+        }
+
+        .error {
+            background-color: #f44336;
+        }
+
+        .password-field {
+            display: flex;
+            align-items: center;
+        }
+
+        .password-field input[type="password"] {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        .password-field button {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: #ADD8E6;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+    
+    <title>ParusAntiVirus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #001f3f;
+            color: white;
+        }
+
+        .select-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .select-container select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: black;
+        }
+
+        .hidden-text {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: black;
+            animation: slideDown 0.3s forwards;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .alert {
+            display: none;
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .success {
+            background-color: #4CAF50;
+        }
+
+        .error {
+            background-color: #f44336;
+        }
+
+        .password-field {
+            display: flex;
+            align-items: center;
+        }
+
+        .password-field input[type="password"] {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        .password-field button {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: #ADD8E6;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+    <title>ParusAntiVirus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #001f3f;
+            color: white;
+        }
+
+        .select-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .select-container select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: black;
+        }
+
+        .hidden-text {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: black;
+            animation: slideDown 0.3s forwards;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .alert {
+            display: none;
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .success {
+            background-color: #4CAF50;
+        }
+
+        .error {
+            background-color: #f44336;
+        }
+
+        .password-field {
+            display: flex;
+            align-items: center;
+        }
+
+        .password-field input[type="password"] {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        .password-field button {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: #ADD8E6;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+<title>ParusAntiVirus</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #001f3f;
+        color: white;
+    }
+
+    .select-container {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .select-container select {
+        padding: 5px;
+        font-size: 11px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        color: black;
+    }
+
+    .hidden-text {
+        display: none;
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        color: black;
+        animation: slideDown 0.3s forwards;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .alert {
+        display: none;
+        padding: 20px;
+        background-color: #f44336;
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    .success {
+        background-color: #4CAF50;
+    }
+
+    .error {
+        background-color: #f44336;
+    }
+
+    .password-field {
+        display: flex;
+        align-items: center;
+    }
+
+    .password-field input[type="password"] {
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        width: 100%;
+    }
+
+    .password-field button {
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: #ADD8E6;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+</style>
+<title>ParusAntiVirus Plus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #001f3f;
+            color: white;
+        }
+
+        .select-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .select-container select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: black;
+        }
+
+        .hidden-text {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: black;
+            animation: slideDown 0.3s forwards;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .alert {
+            display: none;
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .success {
+            background-color: #4CAF50;
+        }
+
+        .error {
+            background-color: #f44336;
+        }
+
+        .password-field {
+            display: flex;
+            align-items: center;
+        }
+
+        .password-field input[type="password"] {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        .password-field button {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: #ADD8E6;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+
+<title>ParusAntiVirus Plus Activation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #001f3f;
+            color: white;
+        }
+
+        .select-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .select-container select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: black;
+        }
+
+        .activation-page {
+            display: none;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .alert {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            display: none;
+        }
+
+        .alert.success {
+            background-color: green;
+            color: white;
+        }
+
+        .alert.error {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</style>
+</style>
+</head>
+<body> 
+<div class="header">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3eb88427204925.563614d45cf4d.png" alt="logo">
+    <div class="title">ParusAntiVirus</div>
+</div>
+
+<div class="banner">
+    <div class="content">
+        <h1>Троян точно не проскочет!</h1>
+        <p>ParusAntiVirus обновлен до версии 0.35.678.0</p>
+        <img src="svo.png" alt="more info" onclick="toggleText()">
+    </div>
+</div>
+
+<div class="hiddenn-textr">
+    <p>Троян? Забудь про него с помощью ParusAntivirus.
+        ParusAntiVirus 0.35.678.0 - это новая версия антивирусного программного обеспечения, которая заявляет о впечатляющем достижении в области борьбы с троянами и другими вредоносными программами. Главной особенностью этой версии является полное уничтожение троянских вирусов, обеспечивающее надежную защиту вашего компьютера от вредоносных атак.
+
+ParusAntiVirus 0.35.678.0 предлагает расширенный набор инструментов и технологий, способных обнаруживать и удалять даже самые сложные и хитроумные троянские вирусы. Благодаря постоянному обновлению базы данных и интеллектуальным алгоритмам сканирования, этот антивирус обеспечивает высокую степень защиты от вредоносных угроз.
+
+С ParusAntiVirus 0.35.678.0 ваш компьютер будет защищен от троянских вирусов, которые могут украсть ваши личные данные, вредить системе и замедлять работу компьютера. Надежная защита и высокая эффективность делают этот антивирус идеальным выбором для обеспечения безопасности вашего компьютера.
+    </p>
+</div>
+
+<div class="select-container">
+    <select id="info-select" onchange="showText()">
+        <option value="">--Выберите раздел--</option>
+        <option value="about-us">О нас</option>
+        <option value="usage-tips">Советы по использованию</option>
+        <option value="product-info">О продукте</option>
+        <option value="why-choose-us">Почему выбрать нас?</option>
+        <option value="support">Техподдержка</option>
+        <option value="activation-page">ParusAntiVirus Plus</option>
+    </select>
+</div>
+
+<div id="about-us" class="hidden-text">ParusTeam - команда профессионалов, специализирующихся на создании программного обеспечения. Мы разрабатываем высококачественные антивирусные решения, которые защищают ваши устройства и данные от вредоносных угроз. Наша цель - обеспечить максимальную безопасность в онлайн-мире для наших пользователей. С нами ваша информация в надежных руках!</div>
+<div id="usage-tips" class="hidden-text"> 1. Регулярно обновляйте базы и сканируйте систему.
+    2. Запланируйте автоматические обновления и сканирования.
+    3. Следуйте рекомендациям антивируса и обращайтесь за помощью.
+    4. Обеспечьте безопасность с помощью ParusAntiVirus.</div>
+<div id="product-info" class="hidden-text">Наш антивирус предлагает широкий спектр функций, которые обеспечивают надежную защиту вашего устройства от вредоносных программ. Наш продукт постоянно обновляется, чтобы обнаруживать и блокировать новые угрозы. Кроме того, мы предлагаем удобный интерфейс, высокую скорость сканирования и низкую нагрузку на систему. Выбирая наш антивирус, вы можете быть уверены в безопасности ваших данных и личной информации. </div>
+<div id="why-choose-us" class="hidden-text">Наш антивирус - надежная защита от вредоносных программ, обновления и быстрое реагирование на новые угрозы.Сложный интерфейс делает использование не удобным для всех пользователей. Ваши данные и личная информация НЕ под надежной защитой.</div>
+<div id="support" class="hidden-text">Команда техподдержки ParusTeam всегда на связи, чтобы помочь вам решить любые вопросы и проблемы, связанные с нашим антивирусным программным обеспечением. Посетите наш сайт техподдержки parus.antivirus.support, где вы можете получить быструю и квалифицированную помощь от наших специалистов. Наша цель - обеспечить удовлетворение и комфорт для каждого клиента. Ваша безопасность и удовлетворенность нашим приоритетом!</div>
+
+<div id="main-page" class="activation-page">
+    <h1 style="color: white;">Главная страница</h1>
+    <p style="color: gray;">Это главная страница вашего сайта.</p>
+</div>
+
+<div id="activation-page" class="activation-page">
+    <h1 style="color: white;">Активация подписки ParusAntiVirus Plus</h1>
+    <p style="color: gray;">Активируйте подписку ParusAntiVirus Plus через код</p>
+    <input type="password" id="activationCode" placeholder="Введите код" style="width: 80%; padding: 10px; border-radius: 10px; border: 1px solid #ccc;">
+
+    <button onclick="activateSubscription()" style="background-color: #ADD8E6; color: black; border: none; padding: 10px; cursor: pointer; margin-top: 10px;">Активировать</button>
+    <div id="alert" class="alert"></div>
+</div>
+
+<script>
+    const validCodes = [
+        "UpHgTrVnNNmKl-129769-000-000_CODE-PARUS-PLUS",
+        "AbCdEfGhIJkKo-129769-001-000_CODE-PARUS-PLUS",
+        "QwErTyUiOPqGl-129769-002-000_CODE-PARUS-PLUS",
+        "ZxCvBnMmLKjLo-129769-003-000_CODE-PARUS-PLUS",
+        "ErTyUiOPlmnFG-129769-004-000_CODE-PARUS-PLUS",
+        "GhIjKlMnNoPVh-129769-005-000_CODE-PARUS-PLUS",
+        "AsDfGhJkLmNMl-129769-006-000_CODE-PARUS-PLUS",
+        "QwErTyUiIoPYY-129769-007-000_CODE-PARUS-PLUS",
+        "ZnCvBnMaSkLUy-129769-008-000_CODE-PARUS-PLUS",
+        "JkLmNoPqRstUi-129769-009-000_CODE-PARUS-PLUS",
+        "HtJkLmNjQwEIo-129769-010-000_CODE-PARUS-PLUS",
+        "WmQzLvGhJkKPl-129769-011-000_CODE-PARUS-PLUS",
+        "TpJwQkZmLvKgY-129769-012-000_CODE-PARUS-PLUS",
+        "VnMbLsXpJwKbH-129769-013-000_CODE-PARUS-PLUS",
+        "LmSkNnThJpRmH-129769-014-000_CODE-PARUS-PLUS",
+        "WpQzJkLhGfSjK-129769-015-000_CODE-PARUS-PLUS",
+        "QnTrBrXjKmLll-129769-016-000_CODE-PARUS-PLUS",
+        "LjKmNwRbCvPDg-129769-017-000_CODE-PARUS-PLUS",
+        "WvNjQkTpLmKLL-129769-018-000_CODE-PARUS-PLUS",
+        "BmLpXzQkLnMqq-129769-019-000_CODE-PARUS-PLUS",
+        "QtKpLvWnJbMMq-129769-020-000_CODE-PARUS-PLUS"
+    ];
+    
+    function navigatePage() {
+        var select = document.getElementById("info-select");
+        var value = select.value;
+    
+        var pages = document.getElementsByClassName("activation-page");
+        for (var i = 0; i < pages.length; i++) {
+            pages[i].style.display = "none";
+        }
+    
+        if (value) {
+            document.getElementById(value).style.display = "block";
+        }
+    }
+    
+    function togglePasswordVisibility() {
+        var passwordField = document.getElementById("activationCode");
+        if (passwordField.type === "password") {
+            passwordField.type = "text";
+        } else {
+            passwordField.type = "password";
+        }
+    }
+    
+    function activateSubscription() {
+        var input = document.getElementById("activationCode");
+        var alertBox = document.getElementById("alert");
+        var code = input.value.trim();
+        if (validCodes.includes(code)) {
+            input.style.border = "2px solid green";
+            alertBox.className = "alert success";
+            alertBox.textContent = "Вы успешно активировали подписку ParusAntiVirus Plus.";
+        } else {
+            input.style.border = "2px solid red";
+            alertBox.className = "alert error";
+            alertBox.textContent = "Код не правильный.";
+        }
+        alertBox.style.display = "block";
+    }
+    </script>
+    
+    
+    
+
+
+
+<script>
+   function showText() {
+    var select = document.getElementById("info-select");
+    var value = select.value;
+
+    var texts = document.getElementsByClassName("hidden-text");
+    for (var i = 0; i < texts.length; i++) {
+        texts[i].style.display = "none";
+    }
+
+    if (value) {
+        var text = document.getElementById(value);
+        text.style.display = "block";
+    }
+}
+</script>
+
+</script>
+
+<div style="margin-top: 20px; background: url('https://i.sunhome.ru/journal/25/problema-namereniya-v2.orig.jpg') no-repeat center center; background-size: cover; color: rgb(53, 48, 48); padding: 20px; text-align: center; height: 158px; display: flex; align-items: center; justify-content: center;">
+    <span style="flex-grow: 1;">Будь умнее, используй ParusAntiVirus Plus</span>
+    <img src="close.png" alt="toggle table" onclick="toggleTable()" style="cursor: pointer; width: 18px;">
+</div>
+
+<div id="comparisonTable" style="display: none; margin-top: 20px; padding: 10px; border: 1px solid #ccc; background-color: #ADD8E6; color: black;">
+    <table style="width: 100%; border-collapse: collapse;">
+        <tr>
+            <th style="width: 33%; text-align: left;">С обычной подпиской</th>
+            <th style="width: 33%; text-align: left;">С подпиской ParusAntiVitus Plus</th>
+            <th style="width: 34%; text-align: left;">Функционал</th>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="close.png" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Автоматическое обновление антивирусных баз.</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="close.png" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Режим реального времени для защиты от угроз.</td>
+        </tr>
+        <td style="padding: 5px;"><img src="close.png" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Расширенная защита интернет-сёрфинга.</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="close.png" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Сканирование и очистка системы от шпионского ПО.</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="close.png" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Поддержка 24/7 от команды специалистов.</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="close.png" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Снижение нагрузки на систему при выполнении сканирования.</td>
+        </tr>
+        <td style="padding: 5px;"><img src="close.png" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Защита онлайн-платежей и финансовых данных.</td>
+        </tr>
+        <tr>..
+            <td style="padding: 5px;"><img src="close.png" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Защита онлайн-платежей и финансовых данных.</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="close.png" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Еженедельные отчеты о состоянии безопасности устройства.</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="close.png" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Защита от фишинговых атак и вредоносных сайтов.</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px;"><img src="close.png" alt="cross" style="width: 14px;"></td>
+            <td style="padding: 5px;"><img src="https://static.tildacdn.com/tild6263-6636-4835-b731-326263643736/check-mark-png-black.png" alt="check" style="width: 14px;"></td>
+            <td style="padding: 5px;">Поддержка авторов проекта.</td>
+        </tr>
+        <!-- Добавь ещё строки по аналогии -->
+        <!-- Добавь ещё строки по аналогии -->
+    </table>
+</div>
+
+
+<!-- Секция для Windows -->
+<div style="margin-top: 20px; color: white; display: flex; justify-content: space-between;">
+    <div style="flex: 1;">
+        <div style="display: flex; align-items: center;">
+            <span>Скачать ParusAntiVirus для Windows</span>
+            <img src="win.png" alt="Windows" style="width: 16px; vertical-align: middle; margin-left: 10px;">
+        </div>
+        <div style="color: gray; margin-top: 10px;">Скачать версию ParusAntiVirus для Windows</div>
+        <div style="margin-top: 18px;">
+            <button style="background-color: #8e008e; color: white; border: none; padding: 10px; cursor: pointer; margin-bottom: 24px;">Скачать для Windows 12 <img src="12.png" alt="Win12" style="width: 18px; vertical-align: middle; margin-left: 5px;"></button>
+            <button style="background-color: #0000FF; color: white; border: none; padding: 10px; cursor: pointer; margin-bottom: 24px;">Скачать для Windows 11 <img src="11.png" alt="Win11" style="width: 18px; vertical-align: middle; margin-left: 5px;"></button>
+            <button style="background-color: #ADD8E6; color: black; border: none; padding: 10px; cursor: pointer;">Скачать для Windows 10 <img src="10.png" alt="Win10" style="width: 18px; vertical-align: middle; margin-left: 5px;"></button>
+        </div>
+    </div>
+    <img src="len.png" alt="Lenovo" style="width: 399px; margin-left: 41px;">
+</div>
+
+<!-- Отступ перед следующей секцией -->
+<div style="margin-top: 9px;"></div>
+
+<div style="color: white; display: flex; justify-content: space-between;">
+    <div style="flex: 1;">
+        <div style="display: flex; align-items: center;">
+            <span>Скачать ParusAntiVirus для macOS</span>
+            <img src="ima.png" alt="Apple" style="width: 36px; vertical-align: middle; margin-left: 10px;">
+        </div>
+        <div style="color: gray; margin-top: 10px;">Скачать версию ParusAntiVirus для macOS</div>
+        <div style="margin-top: 18px;">
+            <button style="background-color: gray; color: white; border: none; padding: 10px; cursor: pointer;">Скачать для macOS</button>
+        </div>
+    </div>
+    <img src="macos.png" alt="macOS" style="width: 399px; margin-left: 41px;">
+</div>
+<h1>.</h1>
+
+
+<div style="text-align: center; padding: 1px; background-color: #001f3f; color: white; position: fixed; bottom: 0; width: 100%;">
+    <p>2022-2024 Все права защищены.</p>
+    <div>
+        <img src="звезда.png" alt="star" style="width: 9px;">
+        <img src="звезда.png" alt="star" style="width: 9px;">
+        <img src="звезда.png" alt="star" style="width: 9px;">
+        <img src="звезда.png" alt="star" style="width: 9px;">
+        <img src="звезда.png" alt="star" style="width: 9px;">
+    </div>
+</div>
+
+
+<div class="popup-button" onclick="togglePopup()">
+    <img src="ogbuda.png" alt="Support">
+</div>
+
+<div class="popup-button" onclick="togglePopup()">
+    <img src="ogbuda.png" alt="Support">
+</div>
+
+<div class="popup-button" onclick="togglePopup()">
+    <img src="ogbuda.png" alt="Support">
+</div>
+
+<div class="popup-button" onclick="togglePopup()">
+    <img src="ogbuda.png" alt="Support">
+</div>
+
+<div class="popup" id="supportPopup">
+    <div class="popup-header">Техподдержка</div>
+    <div class="messages" id="messages">
+        <div class="message moderator">
+            <span class="message-author moderator">Модератор</span>
+            Здравствуйте! Как мы можем помочь вам сегодня?
+            <span class="timestamp">10:00 AM</span>
+        </div>
+    </div>
+    <input type="text" id="userMessage" placeholder="Ваше сообщение" onkeydown="if(event.key === 'Enter') sendMessage()"> </div>
+
+<script>
+    function togglePopup() {
+        var popup = document.getElementById("supportPopup");
+        if (popup.style.display === "none" || popup.style.display === "") {
+            popup.style.display = "block";
+            popup.style.animation = "fadeIn 0.3s forwards";
+        } else {
+            popup.style.display = "none";
+            popup.style.animation = "fadeOut 0.3s forwards";
+        }
+    }
+    
+    function sendMessage() {
+        var input = document.getElementById("userMessage");
+        var message = input.value.trim();
+        if (message === "") return;
+    
+        var messageContainer = document.createElement("div");
+        messageContainer.className = "message user";
+        messageContainer.innerHTML = '<span class="message-author user">Пользователь</span>' + message + '<span class="timestamp">' + getCurrentTime() + '</span>';
+    
+        var messages = document.getElementById("messages");
+        messages.appendChild(messageContainer);
+    
+        input.value = "";
+        messages.scrollTop = messages.scrollHeight;
+    }
+    
+    function getCurrentTime() {
+        var now = new Date();
+        var hours = now.getHours() % 12 || 12;
+        var minutes = now.getMinutes().toString().padStart(2, '0');
+        var ampm = now.getHours() >= 12 ? "PM" : "AM";
+        return hours + ":" + minutes + " " + ampm;
+    }
+    
+    var style = document.createElement('style');
+    style.innerHTML = `
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+            transform: scale(1);
+        }
+        to {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+    }
+    `;
+    document.head.appendChild(style);
+    </script>
+    
+    
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <p>ParusAntiVirus использует файлы Cookie для обработки данных. Не бойтесь, это совсем безопасно.</p>
+    <p class="small-text">(Потом мы их украдём. Мухаххах.)</p>
+</div>
+
+<script>
+function showText() {
+    var select = document.getElementById("info-select");
+    var value = select.value;
+
+    var texts = document.getElementsByClassName("hidden-text");
+    for (var i = 0; i < texts.length; i++) {
+        texts[i].style.display = "none";
+    }
+
+    if (value) {
+        var text = document.getElementById(value);
+        text.style.display = "block";
+    }
+}
+
+function openModal() {
+    document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+}
+
+// Open modal on page load
+window.onload = function() {
+    openModal();
+}
+
+
+
+</script>
+
+<script>
+ 
+function toggleTable() {
+    var table = document.getElementById("comparisonTable");
+    if (table.style.display === "none" || table.style.display === "") {
+        table.style.display = "block";
+        table.style.animation = "slideDown 0.3s forwards";
+    } else {
+        table.style.display = "none";
+        table.style.animation = "slideUp 0.3s forwards";
+    }
+}
+
+var style = document.createElement('style');
+style.innerHTML = `
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+`;
+document.head.appendChild(style);
+</script>
+    
+</script>
+
+</html> 
